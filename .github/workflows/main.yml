@@ -1,0 +1,10 @@
+on: [pull_request]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: Mutual review
+    steps:
+      - name: Hello world action step
+        id: hello
+        uses: DmitryBarskov/love-my-dog@master
