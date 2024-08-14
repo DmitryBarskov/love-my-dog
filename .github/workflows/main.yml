@@ -1,6 +1,7 @@
 on:
-  pull_request:
-    types: [opened, reopened, ready_for_review, review_requested, review_request_removed, edited, synchronize]
+  - pull_request:
+      types: [opened, reopened, ready_for_review, review_requested, review_request_removed, edited, synchronize]
+  - push
 
 jobs:
   hello_world_job:
