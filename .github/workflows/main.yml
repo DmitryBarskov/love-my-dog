@@ -1,9 +1,6 @@
 on:
   - pull_request:
       types: [opened, reopened, ready_for_review, review_requested, review_request_removed, edited, synchronize]
-  - push
-  - schedule:
-    cron: "* * * * *"
 
 jobs:
   hello_world_job:
@@ -12,4 +9,4 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: DmitryBarskov/love-my-dog
+        uses: DmitryBarskov/love-my-dog@require-a-review
