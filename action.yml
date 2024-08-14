@@ -1,0 +1,11 @@
+name: 'Love my dog'
+description: 'Require review from PR author'
+inputs:
+  reviews-required:
+    description: 'Reviews requried to pass the check'
+    required: false
+    default: 1
+outputs: []
+runs:
+  using: 'node20'
+  main: 'index.js'
